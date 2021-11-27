@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SavedWordsViewController.swift
 //  English is simple
 //
 //  Created by Руслан on 27.11.2021.
@@ -7,13 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SavedWordsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        
     }
 
-
 }
-
