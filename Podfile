@@ -5,6 +5,6 @@ target 'English is simple' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'SnapKit', '~> 4.0'
+  pod 'SnapKit', '~> 5.0'
 
 end
