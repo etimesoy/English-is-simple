@@ -1,0 +1,6 @@
+framework module Pods_English_is_simple {
+  umbrella header "Pods-English is simple-umbrella.h"
+
+  export *
+  module * { export * }
+}
