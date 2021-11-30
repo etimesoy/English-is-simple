@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AntonymEntity" representedClassName="AntonymEntity" syncable="YES">
+        <attribute name="value" attributeType="String"/>
+        <relationship name="definition" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DefinitionEntity" inverseName="antonyms" inverseEntity="DefinitionEntity"/>
+    </entity>
+    <entity name="DefinitionEntity" representedClassName="DefinitionEntity" syncable="YES">
+        <attribute name="definition" attributeType="String"/>
+        <attribute name="example" optional="YES" attributeType="String"/>
+        <relationship name="antonyms" toMany="YES" deletionRule="Cascade" destinationEntity="AntonymEntity" inverseName="definition" inverseEntity="AntonymEntity"/>
+        <relationship name="meaning" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MeaningEntity" inverseName="definitions" inverseEntity="MeaningEntity"/>
+        <relationship name="synonyms" toMany="YES" deletionRule="Cascade" destinationEntity="SynonymEntity" inverseName="definition" inverseEntity="SynonymEntity"/>
+    </entity>
+    <entity name="MeaningEntity" representedClassName="MeaningEntity" syncable="YES">
+        <attribute name="partOfSpeech" attributeType="String"/>
+        <relationship name="definitions" toMany="YES" deletionRule="Cascade" destinationEntity="DefinitionEntity" inverseName="meaning" inverseEntity="DefinitionEntity"/>
+        <relationship name="word" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WordEntity" inverseName="meanings" inverseEntity="WordEntity"/>
+    </entity>
+    <entity name="PhoneticsEntity" representedClassName="PhoneticsEntity" syncable="YES">
+        <attribute name="audio" optional="YES" attributeType="String"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <relationship name="word" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WordEntity" inverseName="phonetics" inverseEntity="WordEntity"/>
+    </entity>
+    <entity name="SynonymEntity" representedClassName="SynonymEntity" syncable="YES">
+        <attribute name="value" attributeType="String"/>
+        <relationship name="definition" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DefinitionEntity" inverseName="synonyms" inverseEntity="DefinitionEntity"/>
+    </entity>
+    <entity name="WordEntity" representedClassName="WordEntity" syncable="YES">
+        <attribute name="origin" optional="YES" attributeType="String"/>
+        <attribute name="phonetic" optional="YES" attributeType="String"/>
+        <attribute name="word" attributeType="String"/>
+        <relationship name="meanings" toMany="YES" deletionRule="Cascade" destinationEntity="MeaningEntity" inverseName="word" inverseEntity="MeaningEntity"/>
+        <relationship name="phonetics" toMany="YES" deletionRule="Cascade" destinationEntity="PhoneticsEntity" inverseName="word" inverseEntity="PhoneticsEntity"/>
+    </entity>
+    <elements>
+        <element name="DefinitionEntity" positionX="-81.2421875" positionY="67.69140625" width="128" height="104"/>
+        <element name="MeaningEntity" positionX="-2.2734375" positionY="-35.08984375" width="128" height="74"/>
+        <element name="PhoneticsEntity" positionX="-246.09375" positionY="-20.20703125" width="128" height="74"/>
+        <element name="SynonymEntity" positionX="-189.25" positionY="208.76171875" width="128" height="59"/>
+        <element name="WordEntity" positionX="-171.07421875" positionY="-193.84375" width="128" height="104"/>
+        <element name="AntonymEntity" positionX="-72" positionY="18" width="128" height="59"/>
+    </elements>
+</model>
