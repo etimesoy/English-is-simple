@@ -13,6 +13,23 @@
 		44173A402752508E003AD311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44173A3E2752508E003AD311 /* LaunchScreen.storyboard */; };
 		44173A4A27525567003AD311 /* SavedWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173A4927525567003AD311 /* SavedWordsViewController.swift */; };
 		44173A4C27525A1D003AD311 /* LoadWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173A4B27525A1D003AD311 /* LoadWordsViewController.swift */; };
+		44173A4F27528B96003AD311 /* CoreDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173A4E27528B96003AD311 /* CoreDataModels.swift */; };
+		44173A5227528E69003AD311 /* PersistableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173A5127528E69003AD311 /* PersistableService.swift */; };
+		44173A5427528F7E003AD311 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173A5327528F7E003AD311 /* NetworkService.swift */; };
+		44173A562752993B003AD311 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173A552752993B003AD311 /* Interactor.swift */; };
+		44173AB92752D39C003AD311 /* PhoneticsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AAD2752D39C003AD311 /* PhoneticsEntity.swift */; };
+		44173ABA2752D39C003AD311 /* SynonymEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AAE2752D39C003AD311 /* SynonymEntity.swift */; };
+		44173ABC2752D39C003AD311 /* MeaningEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AB02752D39C003AD311 /* MeaningEntity.swift */; };
+		44173ABD2752D39C003AD311 /* WordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AB12752D39C003AD311 /* WordEntity.swift */; };
+		44173ABF2752D39C003AD311 /* DefinitionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AB32752D39C003AD311 /* DefinitionEntity.swift */; };
+		44173AC02752D39C003AD311 /* AntonymEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AB42752D39C003AD311 /* AntonymEntity.swift */; };
+		44173AC427534FB6003AD311 /* WordsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AC327534FB6003AD311 /* WordsTableViewCell.swift */; };
+		44173AC7275368A5003AD311 /* WordsTableCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AC6275368A5003AD311 /* WordsTableCellData.swift */; };
+		44173AC92753B925003AD311 /* UIViewController+ShowConfirmationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AC82753B925003AD311 /* UIViewController+ShowConfirmationAlert.swift */; };
+		44173ACB2753C317003AD311 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173ACA2753C317003AD311 /* Errors.swift */; };
+		44173ACF2753D1CB003AD311 /* WordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173ACE2753D1CB003AD311 /* WordsViewController.swift */; };
+		44173AD52756AEF5003AD311 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AD42756AEF5003AD311 /* NetworkServiceProtocol.swift */; };
+		44173AD72756B57A003AD311 /* PersistableServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AD62756B57A003AD311 /* PersistableServiceProtocol.swift */; };
 		C6974402A78C9A5086D568AE /* Pods_English_is_simple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6ED116CDCBD363A23783F92 /* Pods_English_is_simple.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,9 +39,26 @@
 		44173A3A2752508A003AD311 /* English_is_simple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = English_is_simple.xcdatamodel; sourceTree = "<group>"; };
 		44173A3C2752508E003AD311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44173A3F2752508E003AD311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		44173A412752508E003AD311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Settings/Info.plist; sourceTree = "<group>"; };
+		44173A412752508E003AD311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44173A4927525567003AD311 /* SavedWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedWordsViewController.swift; sourceTree = "<group>"; };
 		44173A4B27525A1D003AD311 /* LoadWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadWordsViewController.swift; sourceTree = "<group>"; };
+		44173A4E27528B96003AD311 /* CoreDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModels.swift; sourceTree = "<group>"; };
+		44173A5127528E69003AD311 /* PersistableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistableService.swift; sourceTree = "<group>"; };
+		44173A5327528F7E003AD311 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		44173A552752993B003AD311 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		44173AAD2752D39C003AD311 /* PhoneticsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneticsEntity.swift; sourceTree = "<group>"; };
+		44173AAE2752D39C003AD311 /* SynonymEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynonymEntity.swift; sourceTree = "<group>"; };
+		44173AB02752D39C003AD311 /* MeaningEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningEntity.swift; sourceTree = "<group>"; };
+		44173AB12752D39C003AD311 /* WordEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordEntity.swift; sourceTree = "<group>"; };
+		44173AB32752D39C003AD311 /* DefinitionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionEntity.swift; sourceTree = "<group>"; };
+		44173AB42752D39C003AD311 /* AntonymEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntonymEntity.swift; sourceTree = "<group>"; };
+		44173AC327534FB6003AD311 /* WordsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewCell.swift; sourceTree = "<group>"; };
+		44173AC6275368A5003AD311 /* WordsTableCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableCellData.swift; sourceTree = "<group>"; };
+		44173AC82753B925003AD311 /* UIViewController+ShowConfirmationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowConfirmationAlert.swift"; sourceTree = "<group>"; };
+		44173ACA2753C317003AD311 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		44173ACE2753D1CB003AD311 /* WordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewController.swift; sourceTree = "<group>"; };
+		44173AD42756AEF5003AD311 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		44173AD62756B57A003AD311 /* PersistableServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistableServiceProtocol.swift; sourceTree = "<group>"; };
 		8EA6F5E6200D9902D4AD32A1 /* Pods-English is simple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-English is simple.release.xcconfig"; path = "Target Support Files/Pods-English is simple/Pods-English is simple.release.xcconfig"; sourceTree = "<group>"; };
 		E00A5E78E9B2F783BD2386C7 /* Pods-English is simple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-English is simple.debug.xcconfig"; path = "Target Support Files/Pods-English is simple/Pods-English is simple.debug.xcconfig"; sourceTree = "<group>"; };
 		E6ED116CDCBD363A23783F92 /* Pods_English_is_simple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_English_is_simple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,12 +105,11 @@
 		44173A2F2752508A003AD311 /* English is simple */ = {
 			isa = PBXGroup;
 			children = (
+				44173A5027528E06003AD311 /* Services */,
+				44173A4D27528B67003AD311 /* Models */,
 				44173A48275254E4003AD311 /* Controllers */,
-				44173A412752508E003AD311 /* Info.plist */,
+				44173AD02753E14B003AD311 /* Resources */,
 				44173A302752508A003AD311 /* AppDelegate.swift */,
-				44173A3C2752508E003AD311 /* Assets.xcassets */,
-				44173A3E2752508E003AD311 /* LaunchScreen.storyboard */,
-				44173A392752508A003AD311 /* English_is_simple.xcdatamodeld */,
 			);
 			path = "English is simple";
 			sourceTree = "<group>";
@@ -84,10 +117,84 @@
 		44173A48275254E4003AD311 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				44173AC527534FC2003AD311 /* Cells */,
 				44173A4927525567003AD311 /* SavedWordsViewController.swift */,
 				44173A4B27525A1D003AD311 /* LoadWordsViewController.swift */,
+				44173ACE2753D1CB003AD311 /* WordsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		44173A4D27528B67003AD311 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44173A572752CF18003AD311 /* CoreDataEntities */,
+				44173A4E27528B96003AD311 /* CoreDataModels.swift */,
+				44173AC6275368A5003AD311 /* WordsTableCellData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44173A5027528E06003AD311 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44173AD32756AED4003AD311 /* Protocols */,
+				44173AD22756AEC9003AD311 /* Implementations */,
+				44173A552752993B003AD311 /* Interactor.swift */,
+				44173AC82753B925003AD311 /* UIViewController+ShowConfirmationAlert.swift */,
+				44173ACA2753C317003AD311 /* Errors.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		44173A572752CF18003AD311 /* CoreDataEntities */ = {
+			isa = PBXGroup;
+			children = (
+				44173AB42752D39C003AD311 /* AntonymEntity.swift */,
+				44173AB32752D39C003AD311 /* DefinitionEntity.swift */,
+				44173AB02752D39C003AD311 /* MeaningEntity.swift */,
+				44173AAD2752D39C003AD311 /* PhoneticsEntity.swift */,
+				44173AAE2752D39C003AD311 /* SynonymEntity.swift */,
+				44173AB12752D39C003AD311 /* WordEntity.swift */,
+			);
+			path = CoreDataEntities;
+			sourceTree = "<group>";
+		};
+		44173AC527534FC2003AD311 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44173AC327534FB6003AD311 /* WordsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		44173AD02753E14B003AD311 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44173A412752508E003AD311 /* Info.plist */,
+				44173A3C2752508E003AD311 /* Assets.xcassets */,
+				44173A3E2752508E003AD311 /* LaunchScreen.storyboard */,
+				44173A392752508A003AD311 /* English_is_simple.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44173AD22756AEC9003AD311 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				44173A5127528E69003AD311 /* PersistableService.swift */,
+				44173A5327528F7E003AD311 /* NetworkService.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		44173AD32756AED4003AD311 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				44173AD42756AEF5003AD311 /* NetworkServiceProtocol.swift */,
+				44173AD62756B57A003AD311 /* PersistableServiceProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		F1505CA51A6D1E35AC62E7B8 /* Pods */ = {
@@ -96,7 +203,6 @@
 				E00A5E78E9B2F783BD2386C7 /* Pods-English is simple.debug.xcconfig */,
 				8EA6F5E6200D9902D4AD32A1 /* Pods-English is simple.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -215,9 +321,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				44173A3B2752508A003AD311 /* English_is_simple.xcdatamodeld in Sources */,
+				44173ABD2752D39C003AD311 /* WordEntity.swift in Sources */,
 				44173A312752508A003AD311 /* AppDelegate.swift in Sources */,
+				44173ACB2753C317003AD311 /* Errors.swift in Sources */,
+				44173ABC2752D39C003AD311 /* MeaningEntity.swift in Sources */,
+				44173ACF2753D1CB003AD311 /* WordsViewController.swift in Sources */,
+				44173AD72756B57A003AD311 /* PersistableServiceProtocol.swift in Sources */,
+				44173A5227528E69003AD311 /* PersistableService.swift in Sources */,
+				44173AC427534FB6003AD311 /* WordsTableViewCell.swift in Sources */,
+				44173ABF2752D39C003AD311 /* DefinitionEntity.swift in Sources */,
+				44173A4F27528B96003AD311 /* CoreDataModels.swift in Sources */,
+				44173AC7275368A5003AD311 /* WordsTableCellData.swift in Sources */,
 				44173A4C27525A1D003AD311 /* LoadWordsViewController.swift in Sources */,
+				44173AC92753B925003AD311 /* UIViewController+ShowConfirmationAlert.swift in Sources */,
+				44173ABA2752D39C003AD311 /* SynonymEntity.swift in Sources */,
+				44173AB92752D39C003AD311 /* PhoneticsEntity.swift in Sources */,
 				44173A4A27525567003AD311 /* SavedWordsViewController.swift in Sources */,
+				44173A562752993B003AD311 /* Interactor.swift in Sources */,
+				44173A5427528F7E003AD311 /* NetworkService.swift in Sources */,
+				44173AC02752D39C003AD311 /* AntonymEntity.swift in Sources */,
+				44173AD52756AEF5003AD311 /* NetworkServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
