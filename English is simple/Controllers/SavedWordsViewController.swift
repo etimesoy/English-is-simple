@@ -10,7 +10,7 @@ import SnapKit
 
 final class SavedWordsViewController: WordsViewController {
 
-    // MARK: - Views
+    // MARK: - UI
     lazy private var savedWordsTableView = createWordsTableView()
 
     // MARK: - Life cycle
@@ -28,11 +28,6 @@ final class SavedWordsViewController: WordsViewController {
         
         navigationItem.title = "Saved words"
         obtainSavedWords(wordPart: nil)
-        
-        if interactor.onboardingShouldBeShown {
-            // TODO: показать онбординг
-            print("show onboarding")
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -10,7 +10,7 @@ import SnapKit
 
 final class LoadWordsViewController: WordsViewController {
 
-    // MARK: - Views
+    // MARK: - UI
     lazy private var loadedWordsTableView = createWordsTableView()
     
     // MARK: - Life cycle

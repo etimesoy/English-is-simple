@@ -9,7 +9,7 @@ import UIKit
 
 class WordsTableViewCell: UITableViewCell {
 
-    // MARK: - Views
+    // MARK: - UI
     lazy private var wordLabel = UILabel()
     lazy private var phoneticLabel = UILabel()
     
