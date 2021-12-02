@@ -30,6 +30,9 @@
 		44173ACF2753D1CB003AD311 /* WordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173ACE2753D1CB003AD311 /* WordsViewController.swift */; };
 		44173AD52756AEF5003AD311 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AD42756AEF5003AD311 /* NetworkServiceProtocol.swift */; };
 		44173AD72756B57A003AD311 /* PersistableServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AD62756B57A003AD311 /* PersistableServiceProtocol.swift */; };
+		44B3E327275751FF0077213C /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3E326275751FF0077213C /* OnboardingPageViewController.swift */; };
+		44B3E3292757563C0077213C /* OnboardingPageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3E3282757563C0077213C /* OnboardingPageData.swift */; };
+		44B3E32B27575A320077213C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3E32A27575A320077213C /* OnboardingViewController.swift */; };
 		C6974402A78C9A5086D568AE /* Pods_English_is_simple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6ED116CDCBD363A23783F92 /* Pods_English_is_simple.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,9 @@
 		44173ACE2753D1CB003AD311 /* WordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewController.swift; sourceTree = "<group>"; };
 		44173AD42756AEF5003AD311 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		44173AD62756B57A003AD311 /* PersistableServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistableServiceProtocol.swift; sourceTree = "<group>"; };
+		44B3E326275751FF0077213C /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		44B3E3282757563C0077213C /* OnboardingPageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageData.swift; sourceTree = "<group>"; };
+		44B3E32A27575A320077213C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		8EA6F5E6200D9902D4AD32A1 /* Pods-English is simple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-English is simple.release.xcconfig"; path = "Target Support Files/Pods-English is simple/Pods-English is simple.release.xcconfig"; sourceTree = "<group>"; };
 		E00A5E78E9B2F783BD2386C7 /* Pods-English is simple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-English is simple.debug.xcconfig"; path = "Target Support Files/Pods-English is simple/Pods-English is simple.debug.xcconfig"; sourceTree = "<group>"; };
 		E6ED116CDCBD363A23783F92 /* Pods_English_is_simple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_English_is_simple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +127,8 @@
 				44173A4927525567003AD311 /* SavedWordsViewController.swift */,
 				44173A4B27525A1D003AD311 /* LoadWordsViewController.swift */,
 				44173ACE2753D1CB003AD311 /* WordsViewController.swift */,
+				44B3E326275751FF0077213C /* OnboardingPageViewController.swift */,
+				44B3E32A27575A320077213C /* OnboardingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 				44173A572752CF18003AD311 /* CoreDataEntities */,
 				44173A4E27528B96003AD311 /* CoreDataModels.swift */,
 				44173AC6275368A5003AD311 /* WordsTableCellData.swift */,
+				44B3E3282757563C0077213C /* OnboardingPageData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,6 +331,7 @@
 			files = (
 				44173A3B2752508A003AD311 /* English_is_simple.xcdatamodeld in Sources */,
 				44173ABD2752D39C003AD311 /* WordEntity.swift in Sources */,
+				44B3E3292757563C0077213C /* OnboardingPageData.swift in Sources */,
 				44173A312752508A003AD311 /* AppDelegate.swift in Sources */,
 				44173ACB2753C317003AD311 /* Errors.swift in Sources */,
 				44173ABC2752D39C003AD311 /* MeaningEntity.swift in Sources */,
@@ -330,6 +340,7 @@
 				44173A5227528E69003AD311 /* PersistableService.swift in Sources */,
 				44173AC427534FB6003AD311 /* WordsTableViewCell.swift in Sources */,
 				44173ABF2752D39C003AD311 /* DefinitionEntity.swift in Sources */,
+				44B3E327275751FF0077213C /* OnboardingPageViewController.swift in Sources */,
 				44173A4F27528B96003AD311 /* CoreDataModels.swift in Sources */,
 				44173AC7275368A5003AD311 /* WordsTableCellData.swift in Sources */,
 				44173A4C27525A1D003AD311 /* LoadWordsViewController.swift in Sources */,
@@ -337,6 +348,7 @@
 				44173ABA2752D39C003AD311 /* SynonymEntity.swift in Sources */,
 				44173AB92752D39C003AD311 /* PhoneticsEntity.swift in Sources */,
 				44173A4A27525567003AD311 /* SavedWordsViewController.swift in Sources */,
+				44B3E32B27575A320077213C /* OnboardingViewController.swift in Sources */,
 				44173A562752993B003AD311 /* Interactor.swift in Sources */,
 				44173A5427528F7E003AD311 /* NetworkService.swift in Sources */,
 				44173AC02752D39C003AD311 /* AntonymEntity.swift in Sources */,
