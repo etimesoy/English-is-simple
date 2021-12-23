@@ -8,6 +8,3 @@ Tech stack: UIKit, SnapKit, CoreData
   <img src="images/SearchWordsImage.png" width="50%" />
   <img src="images/FavouriteWordsImage.png" width="49%" />
 </p>
-
-<!-- ![SearchWordsImage](images/SearchWordsImage.png)
-![FavouriteWordsImage](images/FavouriteWordsImage.png) -->
