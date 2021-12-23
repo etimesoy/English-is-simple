@@ -19,7 +19,7 @@ extension DefinitionEntity {
         return NSFetchRequest<DefinitionEntity>(entityName: "DefinitionEntity")
     }
 
-    @NSManaged public var definition: String
+    @NSManaged public var definition: String?
     @NSManaged public var example: String?
     @NSManaged public var antonyms: Set<AntonymEntity>
     @NSManaged public var synonyms: Set<SynonymEntity>

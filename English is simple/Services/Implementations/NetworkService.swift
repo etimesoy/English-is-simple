@@ -9,31 +9,30 @@ import Foundation
 
 final class NetworkService: NetworkServiceProtocol {
 
-    // MARK: Properties
-    static let shared: NetworkServiceProtocol = NetworkService(configuration: URLSessionConfiguration.default)
-    
+    // MARK: - Properties
+    static let shared: NetworkServiceProtocol = NetworkService(sessionConfiguration: URLSessionConfiguration.default)
     private let decoder = JSONDecoder()
-    private let configuration: URLSessionConfiguration
-    
-    // MARK: Initializers
-    private init(configuration: URLSessionConfiguration) {
-        self.configuration = configuration
+    private let sessionConfiguration: URLSessionConfiguration
+
+    // MARK: - Initializers
+    private init(sessionConfiguration: URLSessionConfiguration) {
+        self.sessionConfiguration = sessionConfiguration
     }
-    
-    // MARK: Public methods
+
+    // MARK: - Public methods
     func getWordInfo(word: String, completion: @escaping (Result<[Word], NetworkError>) -> Void) {
-        let session = URLSession(configuration: configuration)
+        let session = URLSession(configuration: sessionConfiguration)
         let URLString = "https://api.dictionaryapi.dev/api/v2/entries/en/\(word)"
         let wordInfoURL = URL(string: URLString)
         guard let wordInfoURL = wordInfoURL else {
             completion(.failure(.invalidURLStringError(URLString)))
             return
         }
-        
+
         var request = URLRequest(url: wordInfoURL)
         request.cachePolicy = .reloadIgnoringLocalCacheData
         request.httpMethod = "GET"
-        
+
         session.dataTask(with: request) { [weak self] data, response, error in
             let result: Result<[Word], NetworkError>
             guard let self = self else {

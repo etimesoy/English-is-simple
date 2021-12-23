@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		44173A312752508A003AD311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173A302752508A003AD311 /* AppDelegate.swift */; };
-		44173A3B2752508A003AD311 /* English_is_simple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44173A392752508A003AD311 /* English_is_simple.xcdatamodeld */; };
 		44173A3D2752508E003AD311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44173A3C2752508E003AD311 /* Assets.xcassets */; };
 		44173A402752508E003AD311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44173A3E2752508E003AD311 /* LaunchScreen.storyboard */; };
 		44173A4A27525567003AD311 /* SavedWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173A4927525567003AD311 /* SavedWordsViewController.swift */; };
@@ -30,16 +29,18 @@
 		44173ACF2753D1CB003AD311 /* WordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173ACE2753D1CB003AD311 /* WordsViewController.swift */; };
 		44173AD52756AEF5003AD311 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AD42756AEF5003AD311 /* NetworkServiceProtocol.swift */; };
 		44173AD72756B57A003AD311 /* PersistableServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44173AD62756B57A003AD311 /* PersistableServiceProtocol.swift */; };
+		447484122774876F003EADEA /* AudioPlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447484112774876F003EADEA /* AudioPlayerProtocol.swift */; };
+		44748414277487BF003EADEA /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44748413277487BF003EADEA /* AudioPlayer.swift */; };
 		44B3E327275751FF0077213C /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3E326275751FF0077213C /* OnboardingPageViewController.swift */; };
 		44B3E3292757563C0077213C /* OnboardingPageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3E3282757563C0077213C /* OnboardingPageData.swift */; };
 		44B3E32B27575A320077213C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3E32A27575A320077213C /* OnboardingViewController.swift */; };
+		44B3E3682758C1230077213C /* English_is_simple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44B3E3662758C1230077213C /* English_is_simple.xcdatamodeld */; };
 		C6974402A78C9A5086D568AE /* Pods_English_is_simple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6ED116CDCBD363A23783F92 /* Pods_English_is_simple.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44173A2D2752508A003AD311 /* English is simple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "English is simple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44173A302752508A003AD311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44173A3A2752508A003AD311 /* English_is_simple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = English_is_simple.xcdatamodel; sourceTree = "<group>"; };
 		44173A3C2752508E003AD311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44173A3F2752508E003AD311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44173A412752508E003AD311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,9 +63,12 @@
 		44173ACE2753D1CB003AD311 /* WordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewController.swift; sourceTree = "<group>"; };
 		44173AD42756AEF5003AD311 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		44173AD62756B57A003AD311 /* PersistableServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistableServiceProtocol.swift; sourceTree = "<group>"; };
+		447484112774876F003EADEA /* AudioPlayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerProtocol.swift; sourceTree = "<group>"; };
+		44748413277487BF003EADEA /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		44B3E326275751FF0077213C /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		44B3E3282757563C0077213C /* OnboardingPageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageData.swift; sourceTree = "<group>"; };
 		44B3E32A27575A320077213C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		44B3E3672758C1230077213C /* English_is_simple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = English_is_simple.xcdatamodel; sourceTree = "<group>"; };
 		8EA6F5E6200D9902D4AD32A1 /* Pods-English is simple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-English is simple.release.xcconfig"; path = "Target Support Files/Pods-English is simple/Pods-English is simple.release.xcconfig"; sourceTree = "<group>"; };
 		E00A5E78E9B2F783BD2386C7 /* Pods-English is simple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-English is simple.debug.xcconfig"; path = "Target Support Files/Pods-English is simple/Pods-English is simple.debug.xcconfig"; sourceTree = "<group>"; };
 		E6ED116CDCBD363A23783F92 /* Pods_English_is_simple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_English_is_simple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,12 +127,8 @@
 		44173A48275254E4003AD311 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				44173AC527534FC2003AD311 /* Cells */,
-				44173A4927525567003AD311 /* SavedWordsViewController.swift */,
-				44173A4B27525A1D003AD311 /* LoadWordsViewController.swift */,
-				44173ACE2753D1CB003AD311 /* WordsViewController.swift */,
-				44B3E326275751FF0077213C /* OnboardingPageViewController.swift */,
-				44B3E32A27575A320077213C /* OnboardingViewController.swift */,
+				4474841827748823003EADEA /* Words */,
+				44748416277487F2003EADEA /* Onboarding */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,10 +180,10 @@
 		44173AD02753E14B003AD311 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				44B3E3662758C1230077213C /* English_is_simple.xcdatamodeld */,
 				44173A412752508E003AD311 /* Info.plist */,
 				44173A3C2752508E003AD311 /* Assets.xcassets */,
 				44173A3E2752508E003AD311 /* LaunchScreen.storyboard */,
-				44173A392752508A003AD311 /* English_is_simple.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -193,6 +193,7 @@
 			children = (
 				44173A5127528E69003AD311 /* PersistableService.swift */,
 				44173A5327528F7E003AD311 /* NetworkService.swift */,
+				44748413277487BF003EADEA /* AudioPlayer.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -202,8 +203,29 @@
 			children = (
 				44173AD42756AEF5003AD311 /* NetworkServiceProtocol.swift */,
 				44173AD62756B57A003AD311 /* PersistableServiceProtocol.swift */,
+				447484112774876F003EADEA /* AudioPlayerProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		44748416277487F2003EADEA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				44B3E326275751FF0077213C /* OnboardingPageViewController.swift */,
+				44B3E32A27575A320077213C /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4474841827748823003EADEA /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				44173AC527534FC2003AD311 /* Cells */,
+				44173A4927525567003AD311 /* SavedWordsViewController.swift */,
+				44173A4B27525A1D003AD311 /* LoadWordsViewController.swift */,
+				44173ACE2753D1CB003AD311 /* WordsViewController.swift */,
+			);
+			path = Words;
 			sourceTree = "<group>";
 		};
 		F1505CA51A6D1E35AC62E7B8 /* Pods */ = {
@@ -329,23 +351,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44173A3B2752508A003AD311 /* English_is_simple.xcdatamodeld in Sources */,
 				44173ABD2752D39C003AD311 /* WordEntity.swift in Sources */,
 				44B3E3292757563C0077213C /* OnboardingPageData.swift in Sources */,
 				44173A312752508A003AD311 /* AppDelegate.swift in Sources */,
 				44173ACB2753C317003AD311 /* Errors.swift in Sources */,
+				44B3E3682758C1230077213C /* English_is_simple.xcdatamodeld in Sources */,
 				44173ABC2752D39C003AD311 /* MeaningEntity.swift in Sources */,
 				44173ACF2753D1CB003AD311 /* WordsViewController.swift in Sources */,
 				44173AD72756B57A003AD311 /* PersistableServiceProtocol.swift in Sources */,
 				44173A5227528E69003AD311 /* PersistableService.swift in Sources */,
 				44173AC427534FB6003AD311 /* WordsTableViewCell.swift in Sources */,
 				44173ABF2752D39C003AD311 /* DefinitionEntity.swift in Sources */,
+				44748414277487BF003EADEA /* AudioPlayer.swift in Sources */,
 				44B3E327275751FF0077213C /* OnboardingPageViewController.swift in Sources */,
 				44173A4F27528B96003AD311 /* CoreDataModels.swift in Sources */,
 				44173AC7275368A5003AD311 /* WordsTableCellData.swift in Sources */,
 				44173A4C27525A1D003AD311 /* LoadWordsViewController.swift in Sources */,
 				44173AC92753B925003AD311 /* UIViewController+ShowConfirmationAlert.swift in Sources */,
 				44173ABA2752D39C003AD311 /* SynonymEntity.swift in Sources */,
+				447484122774876F003EADEA /* AudioPlayerProtocol.swift in Sources */,
 				44173AB92752D39C003AD311 /* PhoneticsEntity.swift in Sources */,
 				44173A4A27525567003AD311 /* SavedWordsViewController.swift in Sources */,
 				44B3E32B27575A320077213C /* OnboardingViewController.swift in Sources */,
@@ -566,12 +590,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		44173A392752508A003AD311 /* English_is_simple.xcdatamodeld */ = {
+		44B3E3662758C1230077213C /* English_is_simple.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				44173A3A2752508A003AD311 /* English_is_simple.xcdatamodel */,
+				44B3E3672758C1230077213C /* English_is_simple.xcdatamodel */,
 			);
-			currentVersion = 44173A3A2752508A003AD311 /* English_is_simple.xcdatamodel */;
+			currentVersion = 44B3E3672758C1230077213C /* English_is_simple.xcdatamodel */;
 			path = English_is_simple.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

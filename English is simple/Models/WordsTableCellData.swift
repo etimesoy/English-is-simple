@@ -10,4 +10,5 @@ import Foundation
 struct WordsTableCellData {
     let word: String
     let phonetic: String?
+    let audioURL: String?
 }

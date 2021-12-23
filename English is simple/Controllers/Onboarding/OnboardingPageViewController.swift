@@ -46,8 +46,9 @@ class OnboardingPageViewController: UIPageViewController {
 
     // MARK: - Initializers
     init(_ homeViewController: UIViewController) {
-        self.homeViewController = homeViewController
         homeViewController.modalPresentationStyle = .fullScreen
+        self.homeViewController = homeViewController
+
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     }
 
@@ -57,17 +58,25 @@ class OnboardingPageViewController: UIPageViewController {
 
     // MARK: - Configuration methods
     private func configurePages() {
-        var pagesData: [OnboardingPageData] = []
-        pagesData.append(OnboardingPageData(
-            title: "Search words",
-            description: "You can search for words phonetics in \"🔍 Search\" section. Press on the row with the word to add it to favourites.",
-            image: UIImage(named: "SearchWordsImage")
-        ))
-        pagesData.append(OnboardingPageData(
-            title: "Favourite words",
-            description: "You can find you favourite words in \"★ Favourites\" section. Press on the row with the word to add it to favourites.",
-            image: UIImage(named: "FavouriteWordsImage")
-        ))
+        let pagesData: [OnboardingPageData] = [
+            OnboardingPageData(
+                title: "Search words",
+                description: """
+                You can search for words phonetics in \"🔍 Search\" section. \
+                Press on the row with the word to add it to favourites.
+                """,
+                image: UIImage(named: "SearchWordsImage")
+            ),
+            OnboardingPageData(
+                title: "Favourite words",
+                description: """
+                You can find you favourite words in \"★ Favourites\" section. \
+                Swipe the word to the left to delete it.
+                """,
+                image: UIImage(named: "FavouriteWordsImage")
+            )
+        ]
+
         pagesViewControllers = pagesData.map { pageData in
             return OnboardingViewController(pageData)
         }
@@ -88,7 +97,7 @@ class OnboardingPageViewController: UIPageViewController {
             make.top.equalTo(view.safeAreaLayoutGuide).inset(5)
         }
         pageControl.snp.makeConstraints { make in
-            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(5)
+            make.bottom.equalTo(view.safeAreaLayoutGuide)
             make.centerX.equalTo(view.safeAreaLayoutGuide)
         }
     }
@@ -101,11 +110,15 @@ class OnboardingPageViewController: UIPageViewController {
 
     @objc private func nextButtonDidTap(_ sender: UIButton) {
         if sender.titleLabel?.text == "Finish" {
-            nextButton.snp.makeConstraints { make in
+            nextButton.snp.updateConstraints { make in
                 make.top.equalTo(view.safeAreaLayoutGuide).inset(-80)
+            }
+            pageControl.snp.updateConstraints { make in
+                make.bottom.equalTo(view.safeAreaLayoutGuide).inset(-50)
             }
             pagesViewControllers[pageControl.currentPage].animateDisappear { [weak self] in
                 guard let self = self else { return }
+                self.pageControl.layer.opacity = 0
                 self.view.layoutIfNeeded()
             }
             present(self.homeViewController, animated: true, completion: nil)
@@ -138,8 +151,6 @@ extension OnboardingPageViewController: UIPageViewControllerDataSource {
               let currentPageIndex = pagesViewControllers.firstIndex(of: viewController) else {
                   return nil
               }
-//        let previousPageIndex = (pagesViewControllers.count + currentPageIndex - 1) % pagesViewControllers.count
-//        return pagesViewControllers[previousPageIndex]
         return currentPageIndex > 0 ? pagesViewControllers[currentPageIndex - 1] : nil
     }
 
@@ -148,8 +159,6 @@ extension OnboardingPageViewController: UIPageViewControllerDataSource {
               let currentPageIndex = pagesViewControllers.firstIndex(of: viewController) else {
                   return nil
               }
-//        let nextPageIndex = (currentPageIndex + 1) % pagesViewControllers.count
-//        return pagesViewControllers[nextPageIndex]
         return currentPageIndex < pagesViewControllers.count - 1 ? pagesViewControllers[currentPageIndex + 1] : nil
     }
 

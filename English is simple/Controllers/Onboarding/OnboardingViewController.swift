@@ -24,7 +24,7 @@ class OnboardingViewController: UIViewController {
     lazy private var descriptionLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.font = label.font.withSize(24)
+        label.font = label.font.withSize(20)
         label.textAlignment = .center
         return label
     }()
@@ -66,22 +66,27 @@ class OnboardingViewController: UIViewController {
         }
         descriptionLabel.snp.makeConstraints { make in
             make.right.left.equalToSuperview().inset(15)
-            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(60)
+            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(30)
         }
         functionalityImageView.snp.makeConstraints { make in
-            make.centerY.equalTo(view.safeAreaLayoutGuide).offset(-100)
+            make.centerY.equalTo(view.safeAreaLayoutGuide).offset(-35)
             make.right.left.equalTo(view.safeAreaLayoutGuide).inset(15)
         }
     }
 
     // MARK: - Animation
     func animateDisappear(_ animations: @escaping () -> Void) {
-        titleLabel.snp.makeConstraints { make in
+        titleLabel.snp.updateConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).inset(-80)
+        }
+        functionalityImageView.snp.updateConstraints { make in
+            make.centerY.equalTo(view.safeAreaLayoutGuide).offset(100)
         }
         UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.5, delay: 0, options: [.curveEaseOut], animations: { [weak self] in
             guard let self = self else { return }
             self.view.backgroundColor = .white
+            self.functionalityImageView.layer.opacity = 0
+            self.descriptionLabel.layer.opacity = 0
             self.view.layoutIfNeeded()
             animations()
         }, completion: nil)

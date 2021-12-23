@@ -19,7 +19,7 @@ extension MeaningEntity {
         return NSFetchRequest<MeaningEntity>(entityName: "MeaningEntity")
     }
 
-    @NSManaged public var partOfSpeech: String
+    @NSManaged public var partOfSpeech: String?
     @NSManaged public var definitions: Set<DefinitionEntity>
     @NSManaged public var word: WordEntity?
 

@@ -21,12 +21,12 @@ struct Phonetics: Codable {
 }
 
 struct Meaning: Codable {
-    let partOfSpeech: String
+    let partOfSpeech: String?
     let definitions: [Definition]
 }
 
 struct Definition: Codable {
-    let definition: String
+    let definition: String?
     let example: String?
     let synonyms: [String]
     let antonyms: [String]
