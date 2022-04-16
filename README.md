@@ -1,8 +1,8 @@
 # English is simple
 
-Application, where you can find phonetics of English words and save them
+Application, where you can find phonetics of English words and save them.
 
-Tech stack: UIKit, SnapKit, CoreData
+Tech stack: UIKit, SnapKit, CoreData, URLSession, AVFoundation, UIPageViewController (for onboarding).
 
 <p align="center">
   <img src="images/SearchWordsImage.png" width="50%" />
