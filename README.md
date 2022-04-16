@@ -8,3 +8,7 @@ Tech stack: UIKit, SnapKit, CoreData, URLSession, AVFoundation, UIPageViewContro
   <img src="images/SearchWordsImage.png" width="50%" />
   <img src="images/FavouriteWordsImage.png" width="49%" />
 </p>
+
+## Onboarding demonstration
+
+<image src="images/onboarding-demonstration.gif" width="50%" />
